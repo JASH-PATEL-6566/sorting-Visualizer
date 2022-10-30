@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+}
+
+main button {
+    width: fit-content;
+    float: right;
+    margin: 1em 1em 0 0;
+    padding: 0.4em 1em;
+    font-size: 1.4em;
+    border-style: none;
+    background-color: aquamarine;
+    border-radius: 0.3em;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    cursor: pointer;
+}
+
+.bars {
+    margin-top: 1em;
+    height: 70vh;
+    margin-bottom: 5em;
+    width: fit-content;
+    padding-inline: 1em;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-bottom: 2px solid purple;
+}

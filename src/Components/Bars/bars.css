@@ -1,0 +1,11 @@
+.bars-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bar {
+    width: 0.5em;
+    margin: 0 0.2em;
+    background-color: rgb(138, 2, 165);
+}

@@ -1,0 +1,52 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1em;
+    align-items: center;
+    background-color: aquamarine;
+    border-bottom: 1px solid black;
+}
+
+nav h1 {
+    font-size: 1.7em;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* padding: 1em; */
+}
+
+/* nav ul:hover {
+    background-color: #fff;
+} */
+
+nav ul li {
+    margin: 0 0.5em;
+    font-size: 1.2em;
+    list-style: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1em;
+}
+
+nav ul li:hover {
+    color: rgb(0, 61, 25);
+}
+
+nav ul li select {
+    background-color: aquamarine;
+    padding: 0.2em 0.5em;
+    border-style: none;
+    font-size: 1em;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+nav ul li select option {
+    cursor: pointer;
+}
