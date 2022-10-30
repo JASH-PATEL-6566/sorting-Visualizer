@@ -1,3 +1,5 @@
+![Sorting-Visulaizer](https://user-images.githubusercontent.com/100846378/198867656-d01cbfc5-b0e4-4f37-b5b8-b2e8f80f4ed7.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
