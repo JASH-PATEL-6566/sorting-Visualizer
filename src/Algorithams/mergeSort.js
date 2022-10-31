@@ -5,42 +5,42 @@ async function merge(bar, all, l, m, r) {
     var L = new Array(n1);
     var R = new Array(n2);
 
-    for (var i = 0; i < n1; i++)
-        L[i] = bar[l + i];
-    for (var j = 0; j < n2; j++)
-        R[j] = bar[m + 1 + j];
-    var i = 0;
-    var j = 0;
+    for (var iq = 0; iq < n1; iq++)
+        L[iq] = bar[l + iq];
+    for (var jq = 0; jq < n2; jq++)
+        R[jq] = bar[m + 1 + jq];
+    var ie = 0;
+    var je = 0;
     var k = l;
 
-    while (i < n1 && j < n2) {
+    while (ie < n1 && je < n2) {
         // await new Promise(r => setTimeout(r, 100));
-        if (L[i] <= R[j]) {
-            bar[k] = L[i];
+        if (L[ie] <= R[je]) {
+            bar[k] = L[ie];
             all[k].style.height = `${bar[k]}vh`;
-            i++;
+            ie++;
         }
         else {
-            bar[k] = R[j];
+            bar[k] = R[je];
             all[k].style.height = `${bar[k]}vh`;
-            j++;
+            je++;
         }
         k++;
     }
 
-    while (i < n1) {
+    while (ie < n1) {
         // await new Promise(r => setTimeout(r, 100));
-        bar[k] = L[i];
+        bar[k] = L[ie];
         all[k].style.height = `${bar[k]}vh`;
-        i++;
+        ie++;
         k++;
     }
 
-    while (j < n2) {
+    while (je < n2) {
         // await new Promise(r => setTimeout(r, 100));
-        bar[k] = R[j];
+        bar[k] = R[je];
         all[k].style.height = `${bar[k]}vh`;
-        j++;
+        je++;
         k++;
     }
 }

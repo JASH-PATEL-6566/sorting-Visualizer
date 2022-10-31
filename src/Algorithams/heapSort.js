@@ -1,16 +1,16 @@
 const heapSort = async (bar, all) => {
     var N = bar.length;
-    for (var i = Math.floor(N / 2) - 1; i >= 0; i--)
-        await heapify(bar, all, N, i);
+    for (var ip = Math.floor(N / 2) - 1; ip >= 0; ip--)
+        await heapify(bar, all, N, ip);
 
-    for (var i = N - 1; i > 0; i--) {
+    for (var ih = N - 1; ih > 0; ih--) {
         var temp = bar[0];
-        bar[0] = bar[i];
-        bar[i] = temp;
+        bar[0] = bar[ih];
+        bar[ih] = temp;
         all[0].style.height = `${bar[0]}vh`;
-        all[i].style.height = `${bar[i]}vh`;
+        all[ih].style.height = `${bar[ih]}vh`;
 
-        await heapify(bar, all, i, 0);
+        await heapify(bar, all, ih, 0);
     }
 }
 
