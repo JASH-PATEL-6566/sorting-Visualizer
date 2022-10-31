@@ -1,3 +1,7 @@
+# Sorting Visualizer
+### Live Demo -> [Click-here](https://sorting-visualizer-6566.netlify.app/)
+
+# Image
 ![Sorting-Visulaizer](https://user-images.githubusercontent.com/100846378/198867656-d01cbfc5-b0e4-4f37-b5b8-b2e8f80f4ed7.png)
 
 # Getting Started with Create React App
