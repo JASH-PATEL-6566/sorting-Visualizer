@@ -1,4 +1,4 @@
-module.exports = async (bar, all, num) => {
+export const insertionSort = async (bar, all, num) => {
     const len = num;
     for (let i = 0; i < len; i++) {
         await new Promise(r => setTimeout(r, 100));
