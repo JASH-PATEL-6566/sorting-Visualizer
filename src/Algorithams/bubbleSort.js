@@ -1,4 +1,4 @@
-export const bubbleSort = async (bar, all, num) => {
+const bubbleSort = async (bar, all, num) => {
     const len = num;
     for (let i = 0; i < len - 1; i++) {
         await new Promise(r => setTimeout(r, 100));
@@ -14,3 +14,5 @@ export const bubbleSort = async (bar, all, num) => {
         }
     }
 }
+
+export default bubbleSort;

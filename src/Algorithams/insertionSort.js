@@ -1,4 +1,4 @@
-export const insertionSort = async (bar, all, num) => {
+const insertionSort = async (bar, all, num) => {
     const len = num;
     for (let i = 0; i < len; i++) {
         await new Promise(r => setTimeout(r, 100));
@@ -13,3 +13,5 @@ export const insertionSort = async (bar, all, num) => {
         all[j + 1].style.height = `${temp}vh`;
     }
 }
+
+export default insertionSort;

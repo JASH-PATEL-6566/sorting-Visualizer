@@ -27,7 +27,7 @@ async function partition(bar, all, left, right) {
     return i;
 }
 
-export const quickSort = async (bar, all, left, right) => {
+const quickSort = async (bar, all, left, right) => {
     var index;
     if (bar.length > 1) {
         index = await partition(bar, all, left, right);
@@ -40,3 +40,5 @@ export const quickSort = async (bar, all, left, right) => {
         }
     }
 }
+
+export default quickSort;

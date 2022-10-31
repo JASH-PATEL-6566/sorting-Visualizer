@@ -45,7 +45,7 @@ async function merge(bar, all, l, m, r) {
     }
 }
 
-export const mergeSort = async (bar, all, l, r) => {
+const mergeSort = async (bar, all, l, r) => {
     await new Promise(r => setTimeout(r, 100));
     if (l >= r) {
         return;
@@ -55,3 +55,5 @@ export const mergeSort = async (bar, all, l, r) => {
     await mergeSort(bar, all, m + 1, r);
     merge(bar, all, l, m, r);
 }
+
+export default mergeSort;

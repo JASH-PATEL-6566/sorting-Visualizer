@@ -1,4 +1,4 @@
-export const heapSort = async (bar, all) => {
+const heapSort = async (bar, all) => {
     var N = bar.length;
     for (var i = Math.floor(N / 2) - 1; i >= 0; i--)
         await heapify(bar, all, N, i);
@@ -36,3 +36,5 @@ async function heapify(bar, all, N, i) {
         await heapify(bar, all, N, largest);
     }
 }
+
+export default heapSort;
