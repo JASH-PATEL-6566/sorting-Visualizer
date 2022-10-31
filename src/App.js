@@ -5,9 +5,9 @@ import { useState } from 'react';
 import bubbleSort from './Algorithams/bubbleSort'
 import selectionSort from './Algorithams/selectionSort';
 import insertionSort from './Algorithams/insertionSort';
-import { quickSort } from './Algorithams/quickSort';
-import { heapSort } from './Algorithams/heapSort';
-import { mergeSort } from './Algorithams/mergeSort';
+import quickSort from './Algorithams/quickSort';
+import heapSort from './Algorithams/heapSort';
+import mergeSort from './Algorithams/mergeSort';
 
 function App() {
   const [num, setNum] = useState(60);
